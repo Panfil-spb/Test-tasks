@@ -39,7 +39,7 @@ include CMakeFiles\rules.ninja
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Feelan\Desktop\CMakeProject1\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Feelan\Desktop\Test-tasks\Инфотекс\CMakeProject1\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -50,7 +50,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Feelan\Desktop\CMakeProject1\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Feelan\Desktop\CMakeProject1 -BC:\Users\Feelan\Desktop\CMakeProject1\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Feelan\Desktop\Test-tasks\Инфотекс\CMakeProject1\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Feelan\Desktop\Test-tasks\Инфотекс\CMakeProject1 -BC:\Users\Feelan\Desktop\Test-tasks\Инфотекс\CMakeProject1\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -59,7 +59,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Feelan/Desktop/CMakeProject1/CMakeLists.txt
+# C:/Users/Feelan/Desktop/Test-tasks/Инфотекс/CMakeProject1/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -103,7 +103,7 @@ build CMakeProject1\CMakeProject1.exe: CXX_EXECUTABLE_LINKER__CMakeProject1_Debu
 # Utility command for edit_cache
 
 build CMakeProject1\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Feelan\Desktop\CMakeProject1\out\build\x64-Debug\CMakeProject1 && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Feelan\Desktop\Test-tasks\Инфотекс\CMakeProject1\out\build\x64-Debug\CMakeProject1 && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -114,7 +114,7 @@ build CMakeProject1\edit_cache: phony CMakeProject1\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeProject1\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Feelan\Desktop\CMakeProject1\out\build\x64-Debug\CMakeProject1 && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Feelan\Desktop\CMakeProject1 -BC:\Users\Feelan\Desktop\CMakeProject1\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Feelan\Desktop\Test-tasks\Инфотекс\CMakeProject1\out\build\x64-Debug\CMakeProject1 && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Feelan\Desktop\Test-tasks\Инфотекс\CMakeProject1 -BC:\Users\Feelan\Desktop\Test-tasks\Инфотекс\CMakeProject1\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -134,14 +134,14 @@ build CMakeProject1.exe: phony CMakeProject1\CMakeProject1.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Feelan/Desktop/CMakeProject1/out/build/x64-Debug
+# Folder: C:/Users/Feelan/Desktop/Test-tasks/Инфотекс/CMakeProject1/out/build/x64-Debug
 
 build all: phony CMakeProject1\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Feelan/Desktop/CMakeProject1/out/build/x64-Debug/CMakeProject1
+# Folder: C:/Users/Feelan/Desktop/Test-tasks/Инфотекс/CMakeProject1/out/build/x64-Debug/CMakeProject1
 
 build CMakeProject1\all: phony CMakeProject1\CMakeProject1.exe
 

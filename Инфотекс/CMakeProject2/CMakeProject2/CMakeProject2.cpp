@@ -1,53 +1,20 @@
-﻿// Server part of Server-Client chat. Developed by Mr_Dezz
-
-#include <iostream>
-#include <WinSock2.h>
+﻿#include <WinSock2.h>
 #include <WS2tcpip.h>
-#include <stdio.h>
-#include <vector>
-
+#include "CMakeProject2.h"
 #pragma comment(lib, "Ws2_32.lib")
 
 using namespace std;
 
-void clean_buff(vector<char> buff) {
-	for (int i = 0; i < buff.size(); i++) {
-		if (buff[i] != '\0') {
-			buff[i] = '\0';
-		}
-		else break;
-	}
-}
 
-int check_buff(vector<char> buff) {
-	int len = 0;
-	int num = 0;
-
-	for (int i = 0; i < buff.size(); i++) {
-		if (buff[i] != '\0') {
-			len++;
-			num = num * 10 + (buff[i] - '0');
-		}
-		else break;
-	}
-	cout << " " << num << " ";
-	if (len <= 2) {
-		return 2;
-	}
-	else if (num % 32 != 0) {
-		return 1;
-	}
-	else return 0;
-}
 
 int main(void)
 {
-	const char IP_SERV[] = "127.0.0.1";			
-	const int PORT_NUM = 1;				
+	const char IP_SERV[] = "127.0.0.1";
+	const int PORT_NUM = 1;
 	const short BUFF_SIZE = 1024;
 
-	
-	int erStat;	
+
+	int erStat;
 
 	in_addr ip_to_num;
 	erStat = inet_pton(AF_INET, IP_SERV, &ip_to_num);
@@ -83,7 +50,7 @@ int main(void)
 
 
 	sockaddr_in servInfo;
-	ZeroMemory(&servInfo, sizeof(servInfo));	
+	ZeroMemory(&servInfo, sizeof(servInfo));
 
 	servInfo.sin_family = AF_INET;
 	servInfo.sin_addr = ip_to_num;
@@ -138,10 +105,6 @@ int main(void)
 
 		}
 
-
-
-		
-
 		while (true) {
 			vector <char> servBuff(BUFF_SIZE), clientBuff(BUFF_SIZE);
 			short packet_size = 0;
@@ -151,7 +114,7 @@ int main(void)
 			}
 			cout << "Client's message: ";
 			int ans = check_buff(servBuff);
-			
+
 			if (ans == 0)
 				cout << servBuff.data() << endl;
 			else if (ans == 1)
@@ -161,12 +124,7 @@ int main(void)
 
 			clean_buff(servBuff);
 		}
-		
 	}
 
-	
-
-
 	return 0;
-
 }

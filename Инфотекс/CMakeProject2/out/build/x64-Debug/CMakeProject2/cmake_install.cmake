@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Feelan/Desktop/CMakeProject2/CMakeProject2
+# Install script for directory: C:/Users/Feelan/Desktop/Test-tasks/Инфотекс/CMakeProject2/CMakeProject2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Feelan/Desktop/CMakeProject2/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Feelan/Desktop/Test-tasks/Инфотекс/CMakeProject2/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
